@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Tower Of Hanoi</string>
+    <string name="c_destination" tools:ignore="TypographyOther">(C) Destination</string>
+    <string name="b_middle">(B) Middle</string>
+    <string name="a_start">(A) Start</string>
+    <string name="begin_game">Begin Game!</string>
+    <string name="number_of_discs">Number Of Discs:</string>
+    <string name="_1_10">[ 1 - 10 ]</string>
+    <string name="moves">Moves:</string>
+    <string name="minimum_moves">Minimum Moves:</string>
+</resources>
