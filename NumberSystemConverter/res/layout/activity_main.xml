@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F98AA"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="FROM"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/num_sys_choice_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/to_options" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/inputs_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="base 9"
+        android:inputType="numberDecimal"
+        android:maxLength="18"
+        android:padding="16dp"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/converter"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginVertical="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_action_convert" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TO"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/num_sys_result_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/from_options" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:hint="Bits"
+        android:padding="16dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/holo_red_dark" />
+
+</LinearLayout>
