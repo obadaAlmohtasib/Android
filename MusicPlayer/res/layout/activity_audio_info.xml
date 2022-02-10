@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/audioInfo_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AudioInfoActivity"
+    tools:ignore="Autofill,LabelFor,TextFields">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="110dp">
+
+        <ImageView
+            android:id="@+id/audio_image"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:contentDescription="@string/cover_art"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_layout">
+
+        <TableRow
+            android:id="@+id/title_row"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/title_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|start"
+                android:padding="12dp"
+                android:text="@string/title"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/audio_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/artist_row"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/artist_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|start"
+                android:padding="12dp"
+                android:text="@string/artist"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/audio_artist"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:enabled="false"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/album_row"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/album_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|start"
+                android:padding="12dp"
+                android:text="@string/album"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/audio_album"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:ellipsize="start"
+                android:enabled="false"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/path_row"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/path_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|start"
+                android:padding="12dp"
+                android:text="@string/path"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/audio_path"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingTop="12dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
