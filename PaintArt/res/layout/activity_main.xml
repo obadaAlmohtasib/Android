@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        style="?android:attr/actionBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:weightSum="5">
+
+        <ImageButton
+            android:id="@+id/paintThickness"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#EEEEEE"
+            android:contentDescription="@string/line_weight"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_line_weight" />
+
+        <ImageButton
+            android:id="@+id/paintColor"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#EEEEEE"
+            android:contentDescription="@string/color"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_color_lens" />
+
+        <ImageButton
+            android:id="@+id/paintOpacity"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#EEEEEE"
+            android:contentDescription="@string/opacity"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_opacity" />
+
+        <ImageButton
+            android:id="@+id/paintEraser"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#EEEEEE"
+            android:contentDescription="@string/erase"
+            android:scaleType="fitCenter"
+            android:src="@drawable/eraser_img" />
+
+        <ImageButton
+            android:id="@+id/paintCleanAll"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#EEEEEE"
+            android:contentDescription="@string/clean"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_cleaning_services" />
+    </LinearLayout>
+
+    <com.example.paintart.Painter
+        android:id="@+id/paintBrush"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar" />
+
+</RelativeLayout>
