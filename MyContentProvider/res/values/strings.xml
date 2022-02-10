@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyContentProvider</string>
+    <string name="modify">.Modify</string>
+    <string name="modify_todo">Modify ToDo</string>
+    <string name="remove">.Remove</string>
+    <string name="todo_id">ToDo Id</string>
+    <string name="add">.Add</string>
+    <string name="place">Place</string>
+    <string name="todo_member">TODO member</string>
+    <string name="contentProvider_demo">ContentProvider Demo</string>
+</resources>

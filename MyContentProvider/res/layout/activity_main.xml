@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    tools:ignore="Autofill">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="12dp"
+        android:text="@string/contentProvider_demo"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/blue_700" />
+
+    <EditText
+        android:id="@+id/editTextNewToDoString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/todo_member"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/place"
+        android:imeOptions="actionGo"
+        android:inputType="text"
+        android:maxLines="1"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonAddToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/add" />
+
+    <TextView
+        android:id="@+id/textViewToDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="10"
+        android:maxLines="10"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:columnCount="3"
+        android:rowCount="2">
+
+        <EditText
+            android:id="@+id/editTextToDoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/todo_id"
+            android:imeOptions="actionGo"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonRemoveToDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|fill_horizontal"
+            android:text="@string/remove" />
+
+        <EditText
+            android:id="@+id/editTextNewToDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:layout_gravity="fill"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/modify_todo"
+            android:imeOptions="actionGo"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/buttonModifyToDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|fill_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="@string/modify" />
+    </GridLayout>
+</LinearLayout>
